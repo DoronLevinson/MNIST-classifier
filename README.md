@@ -8,6 +8,7 @@ Built with:
 - **🐳 Docker & Docker Compose** – for containerized deployment
 
 ## 📁 Project Structure
+```
 simple_mnist/
 ├── app/                      # FastAPI backend
 │   ├── main.py               # API endpoints and model loading
@@ -26,6 +27,7 @@ simple_mnist/
 ├── docker-compose.yml        # Multi-container setup
 ├── .env                      # AWS credentials and env variables
 └── .gitignore
+```
 
 ## 🚀 Getting Started
 
