@@ -3,9 +3,8 @@
 A lightweight ML web app that predicts handwritten digits using a neural network model.
 Built with:
 
-- **FastAPI** – backend API
-- **![image](https://github.com/user-attachments/assets/8f2760f5-3b50-406d-b833-44812d48c3e3) 
-Streamlit** – frontend UI
+- **⚙️ FastAPI** – backend API
+- **🖥️ Streamlit** – frontend UI
 - **🐳 Docker & Docker Compose** – for containerized deployment
 
 ## 📁 Project Structure
