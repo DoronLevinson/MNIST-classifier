@@ -21,4 +21,4 @@ jobs:
       run: docker-compose build streamlit
 
     - name: 🧪 Run tests
-      run: docker-compose run fastapi pytest tests/
+      run: docker compose run fastapi pytest tests/
