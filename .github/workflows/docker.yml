@@ -1,0 +1,24 @@
+# .github/workflows/docker.yml
+name: Build and Test Docker App
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout Code
+      uses: actions/checkout@v3
+
+    - name: 🐳 Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: 🔧 Build FastAPI Container
+      run: docker-compose build fastapi
+
+    - name: 🔧 Build Streamlit Container
+      run: docker-compose build streamlit
+
+    - name: 🧪 Run tests
+      run: docker-compose run fastapi pytest tests/
