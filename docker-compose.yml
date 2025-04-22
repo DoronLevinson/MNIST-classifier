@@ -1,11 +1,13 @@
+# docker-compose.yml
 services:
   fastapi:
     build:
-      context: ./app
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8000:8000"
     volumes:
-      - ./app/model/weights:/app/model/weights
+      - ./app/model/weights:/code/app/model/weights
     environment:
       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
